@@ -1411,6 +1411,10 @@ p.group__description {
         padding: 1rem;
     }
 
+    h2.limitations__title.red_title {
+        max-height: 70px;
+    }
+
     .challenges__subtitle {
         font-size: 1.2rem;
     }
