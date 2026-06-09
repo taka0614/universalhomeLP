@@ -132,6 +132,10 @@ body { font-family: "Noto Sans JP", "Noto Sans CJK JP", sans-serif;}
 	position: absolute; bottom: 32px;
 }
 
+span.__note._note {
+    display: flex;
+}
+
 .ttl_main .__note a { text-decoration: underline;}
 
 @media screen and (max-width: 576px) {
