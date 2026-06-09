@@ -1,0 +1,27 @@
+@media (max-width: 767px) {
+    section.form {
+        padding: 5%;
+    }
+
+    .form__body {
+        width: 100%;
+    }
+
+    form table {
+        display: flex;
+        flex-direction: column;
+    }
+
+    tr {
+        display: flex;
+        flex-direction: column;
+    }
+
+    form th {
+        width: 100%;
+    }
+
+    textarea#message , form #btnSubmit {
+        width: 100%;
+    }
+}

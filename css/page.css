@@ -1,0 +1,1059 @@
+@charset "utf-8";
+
+/* ==========================================================
+
+	全体
+
+========================================================== */
+body { font-family: "Noto Sans JP", "Noto Sans CJK JP", sans-serif;}
+
+
+@media screen and (min-width: 768px) and (max-width: 1365.98px) {
+	.container { width: 96%; max-width: 1200px;}
+}
+
+
+
+
+
+
+
+
+/* ==========================================================
+
+	1セレクター1プロパティ
+
+========================================================== */
+/* background-color
+===========================================================*/
+.bgc_gray      { background-color: #F6F6F6;}
+.bgc_darkGray { background-color: #C9C9CA;}
+
+
+/* color
+===========================================================*/
+.fc_red  { color: #E6181C;}
+
+
+/* font-size
+===========================================================*/
+.fz_16  { font-size: 16px;}
+.fz_18  { font-size: 18px;}
+.fz_21  { font-size: 21px;}
+.fz_24  { font-size: 24px;}
+.fz_33  { font-size: 33px;}
+.fz_48  { font-size: 48px;}
+.fz_72  { font-size: 72px;}
+.fz_80  { font-size: 80px;}
+.fz_104 { font-size: 104px;}
+
+
+@media screen and (max-width: 576px) {
+	.fz_24  { font-size: calc(20 / 360 * 100vw);}
+	.fz_33  { font-size: calc(22 / 360 * 100vw);}
+	.fz_48  { font-size: calc(32 / 360 * 100vw);}
+	.fz_72  { font-size: calc(48 / 360 * 100vw);}
+	.fz_80  { font-size: calc(50 / 360 * 100vw);}
+	.fz_104 { font-size: calc(58 / 360 * 100vw);}
+}
+
+
+/* font-Roboto
+===========================================================*/
+.ff_Roboto {
+	font-family: "Roboto", sans-serif;
+	position: relative; top: 0.11em;
+}
+
+
+
+/* width
+===========================================================*/
+.w1-8em { width: 1.8em;}
+
+
+
+
+
+
+
+
+/* ==========================================================
+
+	.container(renewal_header.css上書き)
+
+========================================================== */
+@media screen and (min-width: 1366px) {
+	.container { padding-left: 70px; padding-right: 70px;}
+}
+
+
+
+
+
+
+
+/* ==========================================================
+
+	.ttl(title)
+
+========================================================== */
+/* ttl_main
+===========================================================*/
+.ttl_main {
+	display: flex;
+	padding: 80px 0px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	align-self: stretch;
+	text-align: center;
+	position: relative;
+}
+
+.ttl_main .__sub {
+	color: #E6181C;
+	font-size: 40px;
+	font-style: normal;
+	font-weight: 900;
+}
+
+.ttl_main .__text {
+	text-align: center;
+	font-family: "Noto Sans JP";
+	font-size: 50px;
+	font-weight: 900;
+	line-height: 128%;
+	letter-spacing: 2.5px;
+}
+
+.ttl_main .__note {
+	font-size: 18px;
+	position: absolute; bottom: 32px;
+}
+
+.ttl_main .__note a { text-decoration: underline;}
+
+@media screen and (max-width: 576px) {
+	.ttl_main { padding-top: calc(32 / 360 * 100vw); padding-bottom: calc(32 / 360 * 100vw);}
+
+	.ttl_main .__sub {
+		font-size: calc(20 / 360 * 100vw);
+		margin-bottom: calc(8 / 360 * 100vw);
+	}
+
+	.ttl_main .__text { font-size: calc(26 / 360 * 100vw);}
+
+	.ttl_main .__note {
+		font-size: calc(12 / 360 * 100vw);
+		bottom: calc(16 / 360 * 100vw);
+	}
+}
+
+
+
+
+/* 各背景
+=================================*/
+.ttl_main.--numbers {
+	background: url(../img/title_numbers.webp) no-repeat center center;
+	background-size: auto 120px;
+}
+
+.ttl_main.--performance {
+	background: url(../img/title_performance.webp) no-repeat center center;
+	background-size: auto 120px;
+	padding-bottom: 100px;
+}
+
+.ttl_main.--reason {
+	background: url(../img/title_reason.webp) no-repeat center center;
+	background-size: auto 120px;
+}
+
+.ttl_main.--voice {
+	background: url(../img/title_voice.webp) no-repeat center center;
+	background-size: auto 120px;
+}
+
+@media screen and (max-width: 736px) {
+	.ttl_main.--numbers { background-size: 100% auto;}
+}
+
+@media screen and (max-width: 1108px) {
+	.ttl_main.--performance { background-size: 100% auto;}
+}
+
+@media screen and (max-width: 686px) {
+	.ttl_main.--reason { background-size: 100% auto;}
+}
+
+@media screen and (max-width: 610px) {
+	.ttl_main.--voice { background-size: 100% auto;}
+}
+
+@media screen and (max-width: 576px) {
+	.ttl_main.--numbers,
+	.ttl_main.--reason,
+	.ttl_main.--voice { background-size: auto calc(48 / 360 * 100vw);}
+
+	.ttl_main.--performance {
+		background-size: 91.11% auto;
+		padding-bottom: calc(50 / 360 * 100vw);
+	}
+}
+
+
+
+/* ttl_guarantee
+===========================================================*/
+.ttl_guarantee {
+	width: 100%;
+	text-align: center;
+	background: #E6181C;
+	color: #fff;
+	border-radius: calc(1px / 0);
+	display: flex;
+	padding: 12px 48px;
+	justify-content: center;
+	align-items: center;
+	font-size: 30px;
+	font-weight: 900;
+	margin-top: 12px; margin-bottom: 36px;
+}
+
+
+
+
+
+/* ==========================================================
+
+	ls
+
+========================================================== */
+.ls-disc {
+	list-style: disc;
+	margin-left: 1em;
+}
+
+
+
+
+
+
+
+/* ==========================================================
+
+	フェードインアニメーション
+
+========================================================== */
+/* .fadeIn
+===========================================================*/
+.fadeIn {
+  opacity: 0; /* 初期状態を透明にする */
+}
+
+.fadeIn.--isActive {
+	animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+
+/* .fadeBounce
+===========================================================*/
+.fadeBounce {
+  opacity: 0; /* 初期状態を透明にする */
+}
+
+.fadeBounce.--isActive {
+	animation: fadeBounce 0.2s ease-in-out forwards;
+}
+
+@keyframes fadeBounce {
+	0% {
+		opacity: 0;
+		scale: 0.5;
+	}
+	50% {
+		scale: 1.3;
+	}
+	100% {
+		opacity: 1;
+		scale: 1;
+	}
+}
+
+
+/* .fadeBottom
+===========================================================*/
+.fadeBottom {
+    opacity: 0;
+    transform: translateY(100px);
+}
+
+.fadeBottom.--isActive {
+    animation: fadeBottom 0.8s ease forwards; /* 0.8秒のアニメーション、最後に状態を維持 */
+}
+
+@keyframes fadeBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 子要素 */
+.js_scroll .-_fadeBottom {
+    opacity: 0;
+    transform: translateY(100px);
+}
+
+.js_scroll.--isActive .-_fadeBottom { animation: fadeBottom 0.8s ease forwards;}
+
+
+
+/* delay
+===========================================================*/
+.js_scroll.--delay02.--isActive { animation-delay: 0.2s;}
+.js_scroll.--delay03.--isActive { animation-delay: 0.3s;}
+.js_scroll.--delay04.--isActive { animation-delay: 0.4s;}
+.js_scroll.--delay05.--isActive { animation-delay: 0.5s;}
+.js_scroll.--delay06.--isActive { animation-delay: 0.6s;}
+.js_scroll.--delay07.--isActive { animation-delay: 0.7s;}
+.js_scroll.--delay08.--isActive { animation-delay: 0.8s;}
+.js_scroll.--delay09.--isActive { animation-delay: 0.9s;}
+.js_scroll.--delay10.--isActive { animation-delay: 1s;}
+.js_scroll.--delay12.--isActive { animation-delay: 1.2s;}
+.js_scroll.--delay15.--isActive { animation-delay: 1.5s;}
+.js_scroll.--delay17.--isActive { animation-delay: 1.7s;}
+.js_scroll.--delay20.--isActive { animation-delay: 2s;}
+.js_scroll.--delay22.--isActive { animation-delay: 2.2s;}
+.js_scroll.--delay25.--isActive { animation-delay: 2.5s;}
+
+/* 子要素 */
+.js_scroll.--isActive .-_delay04 { animation-delay: 0.4s;}
+.js_scroll.--isActive .-_delay06 { animation-delay: 0.6s;}
+.js_scroll.--isActive .-_delay08 { animation-delay: 0.8s;}
+
+
+
+
+/* ==========================================================
+
+	円グラフ
+
+========================================================== */
+.c-circle {
+	width: 300px;
+	position: relative;
+	margin: auto;
+}
+
+.c-circle__view {
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: visible;
+}
+
+.c-circle__1, .c-circle__2, .c-circle__3, .c-circle__4 {
+	fill: transparent;
+	stroke-width: 31.8309886184;
+	stroke-dashoffset: 25;
+}
+
+.c-circle.--isActive .c-circle__1 {
+	animation: one 1s;
+	stroke-dasharray: 25, 75, 0, 0;
+	stroke: #e67375;
+}
+
+.c-circle.--isActive .c-circle__2 {
+	animation: two 1s;
+	stroke-dasharray: 0, 25, 3, 72;
+	/*stroke: #888787;*/
+	stroke: #e67375;
+}
+
+.c-circle.--isActive .c-circle__3 {
+	animation: three 1s;
+	stroke-dasharray: 0, 27, 73, 0;
+	stroke: #e6181c;
+}
+
+@keyframes one {
+	0% {
+		stroke-dasharray: 0, 0, 0, 100;
+	}
+	25% {
+		stroke-dasharray: 25, 75, 0, 0;
+	}
+}
+
+@keyframes two {
+	0% {
+		stroke-dasharray: 0, 0, 0, 100;
+	}
+	50% {
+		stroke-dasharray: 0, 25, 3, 72;
+	}
+}
+
+@keyframes three {
+	0% {
+		stroke-dasharray: 0, 0, 0, 100;
+	}
+	50% {
+		stroke-dasharray: 0, 27, 73, 0;
+	}
+}
+
+
+
+
+
+
+/* ==========================================================
+
+	.unit-box
+
+========================================================== */
+.unit-box_num {
+	display: flex;
+	flex-wrap: wrap; justify-content: space-between; align-items: stretch;
+	padding: 60px 16px 36px;
+}
+
+.box_num {
+	display: flex;
+	padding: 24px;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+	align-self: stretch;
+	background: #fff;
+	margin-bottom: 24px;
+	width: 100%;
+	font-weight: 700;
+	border-radius: 15px;
+}
+
+@media screen and (min-width: 1100px) {
+	.box_num.--half { width: 48.94%;}
+}
+
+@media screen and (max-width: 576px) {
+	.box_num { padding: calc(16 / 360 * 100vw);}
+}
+
+.box_num .-_title {
+	color: #333;
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+@media screen and (max-width: 576px) {
+	.box_num .-_title { font-size: calc(20 / 360 * 100vw);}
+}
+
+.box_num .-_content {
+	display: flex;
+	flex-wrap: wrap; justify-content: center; align-items: center;
+	align-self: stretch;
+}
+
+.box_num .-_content .__img        { width: 112px;}
+.box_num .-_content .__img.--w104 { width: 104px;}
+.box_num .-_content .__img.--w128 { width: 128px;}
+
+@media screen and (max-width: 576px) {
+	.box_num .-_content .__img,
+	.box_num .-_content .__img.--w64sp { width: calc(64 / 360 * 100vw);}
+	.box_num .-_content .__img.--w72sp { width: calc(72 / 360 * 100vw);}
+	.box_num .-_content .__img.--w80sp { width: calc(80 / 360 * 100vw);}
+}
+
+.box_num .-_content .__text p {
+	margin-bottom: 0;
+	display: flex;
+	justify-content: flex-start; align-items: flex-end;
+	line-height: 1;
+}
+
+.box_num [class^="-__parts"] {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+}
+
+.box_num [class^="-__parts"] .__ttl_sub {
+	width: 100%;
+	text-align: center;
+	font-size: 24px;
+	font-weight: 700;
+	margin-bottom: 0;
+}
+
+.box_num [class^="-__parts"] .__ttl_ability {
+	width: 100%;
+	color: #fff;
+	background-color: #585858;
+	border-radius: calc(1px / 0);
+	display: flex;
+	padding-top: 8px; padding-bottom: 8px;
+	justify-content: center;
+	align-items: center;
+	align-self: stretch;
+	margin-bottom: 0;
+}
+
+.box_num [class^="-__parts"] .__ttl_compare {
+	width: 100%;
+	text-align: center;
+	font-size: 15px;
+	margin-bottom: 0;
+}
+
+.box_num .__sentence {
+	width: 100%;
+	text-align: center;
+	font-size: 18px;
+	margin-bottom: 0;
+	font-feature-settings: 'pwid' on, 'palt' on;
+}
+
+@media screen and (max-width: 576px) {
+	.box_num [class^="-__parts"] .__ttl_compare { font-size: calc(10 / 360 * 100vw);}
+	.box_num .__sentence                        { font-size: calc(12 / 360 * 100vw);}
+}
+
+
+/* .--spec */
+.box_num.--spec .-_content .-__parts.--w112 { width: 112px;}
+
+.box_num.--spec .-_content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 16px;
+	align-self: stretch;
+}
+
+.box_num.--spec .-_content > div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 8px;
+	align-self: stretch;
+}
+
+.box_num.--spec .-_content .__text .__sub { display: block;}
+
+@media screen and (max-width: 576px) {
+	.box_num.--spec .-_content .-__parts.--w112 { width: calc(64 / 360 * 100vw);}
+}
+
+
+/* .--cover */
+.box_num .-_content.--cover {
+	display: flex;
+	align-items: flex-start;
+	gap: 32px;
+}
+
+.box_num .-_content.--cover .-__parts {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 8px;
+}
+
+.box_num .-_content.--cover .__text {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.box_num .-_content.--cover .__text .__ttl_sub {
+	font-size: 15px;
+	text-align: center;
+	justify-content: center;
+}
+
+
+/* .--def */
+.box_num .-_content.--def {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 8px;
+	align-self: stretch;
+}
+
+
+/* .--rate */
+.box_num .-_content.--rate {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 16px;
+	align-self: stretch;
+}
+
+.box_num .-_content.--rate .c-circle {
+	width: 136px; height: 136px;
+	position: relative;
+}
+
+.box_num .-_content.--rate .c-circle .__house1 { position: absolute; top: 20%; right: 14%; opacity: 0;}
+.box_num .-_content.--rate .c-circle .__house2 { position: absolute; bottom: 20%; left: 13%; opacity: 0;}
+
+.box_num .-_content.--rate .c-circle.--isActive .__house1 {
+	animation: fadeIn 0.5s ease-in-out forwards;
+	animation-delay: 0.9s;
+}
+
+.box_num .-_content.--rate .c-circle.--isActive .__house2 {
+	animation: fadeIn 0.5s ease-in-out forwards;
+	animation-delay: 1.8s;
+}
+
+
+@media screen and (max-width: 576px) {
+	.box_num .-_content.--rate .c-circle { width: calc(89 / 360 * 100vw); height: calc(89 / 360 * 100vw);}
+
+	.box_num .-_content.--rate .c-circle .__house1 img { width: calc(28 / 360 * 100vw); height: auto;}
+	.box_num .-_content.--rate .c-circle .__house2 img { width: calc(32 / 360 * 100vw);}
+}
+
+
+/* .--degree */
+.box_num .-_content.--degree {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 48px;
+	align-self: stretch;
+}
+
+.box_num .-_content.--degree .__ttl_sub { font-size: 16px;}
+
+.box_num .-_content.--degree .-__parts > div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-self: stretch;
+}
+
+
+/* .--award */
+.box_num.--award .-_content {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 8px;
+	align-self: stretch;
+	overflow: hidden;
+}
+
+.box_num.--award .-_content .-__parts {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 8px;
+}
+
+.box_num.--award .-_content .-__parts .__img { width: 160px;}
+
+.box_num.--award .-_content .-__parts .__text {
+	text-align: center;
+	font-family: "Noto Sans JP";
+	font-size: 14px;
+}
+
+.box_num.--award .-_content .__text p { justify-content: center;}
+
+.box_num.--award .-_content .-__parts .__sp_only { display: none;}
+
+@media screen and (max-width: 630px) {
+	.box_num.--award { padding-right: calc(12 / 360 * 100vw); padding-left: calc(12 / 360 * 100vw);}
+
+	.box_num.--award .-_content { gap: 0;}
+
+	.box_num.--award .-_content .-__parts { width: calc(96 / 360 * 100vw);}
+
+	.box_num.--award .-_content .-__parts .__img { width: 100%;}
+
+	.box_num.--award .-_content .-__parts .__text { font-size: calc(12 / 360 * 100vw); letter-spacing: -1px;}
+
+	.box_num.--award .-_content .-__parts .__sp_only { display: block;}
+}
+
+
+/* .--perf */
+.box_num .-_content.--perf {
+	display: flex;
+	align-items: flex-start;
+	gap: 40px;
+	align-self: stretch;
+}
+
+.box_num .-_content.--perf .-__parts {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex: 1 0 0;
+}
+
+.box_num .-_content.--perf .-__parts .__text {
+	display: flex;
+	padding-top: 6px; padding-bottom: 6px;
+	justify-content: center;
+	align-items: baseline;
+	gap: 12px;
+	line-height: normal;
+}
+
+.box_num .-_content.--perf .ff_Roboto { top: 0.03em;}
+
+@media screen and (max-width: 1100px) {
+	.box_num .-_content.--perf { flex-direction: column;}
+
+	.box_num .-_content.--perf .-__parts {
+		width: 80%;
+		margin-right: auto; margin-left: auto;
+	}
+}
+
+@media screen and (max-width: 767.98px) {
+	.box_num .-_content.--perf .-__parts { width: 100%;}
+}
+
+
+/* .--deliver */
+.box_num .-_content.--deliver {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 36px;
+	align-self: stretch;
+}
+
+.box_num .-_content.--deliver .-__parts1 {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+
+.box_num .-_content.--deliver .-__parts1 > div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 8px;
+}
+
+.box_num .-_content.--deliver .__found {
+	font-weight: normal;
+}
+
+.box_num .-_content.--deliver .-__parts2 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 7.5px;
+}
+
+.box_num .-_content.--deliver .-__parts2 > div {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+}
+
+@media screen and (max-width: 576px) {
+	.box_num .-_content.--deliver .-__parts2 .w1-8em { width: 2.1em;}
+}
+
+
+
+
+
+.bl-caution {
+	margin-top: 12px; margin-bottom: 12px;
+	padding: 24px;
+}
+
+.bl-caution li {
+	display: inline;
+	margin-right: 0.2em;
+	font-size: 12px;
+}
+
+@media screen and (max-width: 576px) {
+	.bl-caution { padding: 0;}
+}
+
+
+
+
+/* ==========================================================
+
+	.pu_another
+
+========================================================== */
+.pu_another .bgc_darkGray { padding-top: 80px; padding-bottom: 80px;}
+
+.pu_another .-_block {
+	padding-bottom: 80px;
+	border-radius: 40px;
+	background: #fff;
+}
+
+@media screen and (max-width: 576px) {
+	.pu_another .bgc_darkGray { padding-top: calc(16 / 360 * 100vw); padding-bottom: calc(16 / 360 * 100vw);}
+
+	.pu_another .-_block { padding-bottom: calc(10 / 360 * 100vw);}
+}
+
+
+
+/* .pu_reason
+===========================================================*/
+.pu_reason {
+	width: 96%; max-width: 960px;
+	margin-right: auto; margin-bottom: 60px; margin-left: auto;
+}
+
+.pu_reason .__note {
+	width: 96%; max-width: 706px;
+	margin-top: 20px; margin-right: auto; margin-left: auto;
+}
+
+.pu_reason .__note li {
+	position: relative;
+	padding-left: 1.3em;
+}
+
+.pu_reason .__note li::before {
+	content: '※';
+	position: absolute; left: 0; top: 0;
+}
+
+@media screen and (max-width: 576px) {
+	.pu_reason .__note { font-size: calc(12 / 360 * 100vw);}
+}
+
+
+/* グラフ
+===================================*/
+.pu_reason .graphs {
+	display: flex;
+    flex-direction: column;
+}
+
+.graphs .-_column {
+	display: flex;
+	align-items: center;
+}
+
+.graphs .-_column .-__title {
+	flex: 1;
+	margin-bottom: 0;
+	padding-right: 1em;
+	display: flex;
+	justify-content: flex-end;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.graphs .-_column .-__barWrap { width: 65.625%;}
+
+.graphs .-_column .-__barWrap {
+	position: relative;
+	height: 56px;
+	overflow: hidden;
+}
+
+.graphs .-_column .-__barWrap [class*="__graph"] {
+	height: 44px;
+	position: absolute; left: 0; top: 6px;
+	border-radius: 0 4px 4px 0;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	padding: 10px 20px;
+	background: #c9c9ca;
+	transform: translateX(-100%);
+	opacity: 0;
+	will-change: transform, opacity;
+}
+
+.graphs .-_column .-__barWrap [class*="__graph"] span {
+	font-size: 26px;
+	line-height: 1;
+}
+
+@media screen and (max-width: 767.98px) {
+	.pu_reason .graphs {
+		width: 80%;
+		margin-right: auto; margin-left: auto;
+	}
+
+	.graphs .-_column { align-items: flex-start; flex-direction: column;}
+
+	.graphs .-_column .-__barWrap { width: 100%;}
+
+	.pu_reason .__note { width: 80%;}
+}
+
+@media screen and (max-width: 576px) {
+	.pu_reason .graphs,
+	.pu_reason .__note { width: 90%;}
+
+	.graphs .-_column .-__title { font-size: calc(16 / 360 * 100vw);}
+
+	.graphs .-_column .-__barWrap { height: calc(46 / 360 * 100vw);}
+
+	.graphs .-_column .-__barWrap [class*="__graph"] { height: calc(28 / 360 * 100vw);}
+
+	.graphs .-_column .-__barWrap [class*="__graph"] span { font-size: calc(19 / 360 * 100vw);}
+}
+
+
+/* 個別グラフ指定 */
+.graphs .-_column .-__barWrap .__graph1 { width: 83%; background: #E6181C; color: #ffffff;}
+.graphs .-_column .-__barWrap .__graph2 { width: 61.9%;}
+.graphs .-_column .-__barWrap .__graph3 { width: 46.2%;}
+.graphs .-_column .-__barWrap .__graph4 { width: 38.6%;}
+.graphs .-_column .-__barWrap .__graph5 { width: 34.8%;}
+
+/* アニメーション */
+.graphs.--isActive .-_column .-__barWrap .__graph1 { animation: graphAnim 1.8s forwards;}
+.graphs.--isActive .-_column .-__barWrap .__graph2 { animation: graphAnim 1.5s forwards; animation-delay: 0.5s;}
+.graphs.--isActive .-_column .-__barWrap .__graph3 { animation: graphAnim 1.5s forwards; animation-delay: 1s;}
+.graphs.--isActive .-_column .-__barWrap .__graph4 { animation: graphAnim 1.5s forwards; animation-delay: 1.5s;}
+.graphs.--isActive .-_column .-__barWrap .__graph5 { animation: graphAnim 1.5s forwards; animation-delay: 2s;}
+
+.graphs.--isActive .fadeIn { animation: fadeIn 1s ease-in-out forwards;}
+.graphs.--isActive .__graph2 .fadeIn { animation-delay: 1.5s;}
+.graphs.--isActive .__graph3 .fadeIn { animation-delay: 1.4s;}
+.graphs.--isActive .__graph4 .fadeIn { animation-delay: 1.3s;}
+.graphs.--isActive .__graph5 .fadeIn { animation-delay: 1.25s;}
+
+@keyframes graphAnim {
+	0% {
+		transform: translateX(-100%);
+		opacity: 0;
+	}
+	5% {
+		transform: translateX(-100%);
+		opacity: 1;
+	}
+	100% {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+
+
+
+
+/* .pu_voice
+===========================================================*/
+.pu_voice .-_w_column {
+	width: 90%; max-width: 800px;
+	margin-right: auto; margin-left: auto;
+	display: flex;
+	flex-wrap: wrap; justify-content: space-between; align-items: stretch;
+}
+
+.pu_voice .-__column {
+	width: 47%;
+	margin-bottom: 48px;
+	font-weight: 700;
+}
+
+.pu_voice .-__column .__guest {
+	background: #E6181C;
+	color: #fff;
+	border-radius: 8px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-self: stretch;
+	padding-top: 16px; padding-bottom: 16px;
+	position: relative;
+	margin-bottom: calc(16px + 11px);
+	font-size: 20px;
+}
+
+.pu_voice .-__column .__guest::after {
+	content: '';
+	border-right: 11px solid transparent;
+	border-left: 11px solid transparent;
+	border-top: 15px solid #E6181C;
+	position: absolute; bottom: -15px; left: 50%;
+	transform: translateX(-50%);
+}
+
+.pu_voice .-__column .__text { margin-bottom: 0;}
+
+
+@media screen and (min-width: 1024px) {
+	.pu_voice .-__column {
+		padding-right: 24px; padding-left: 24px;
+	}
+}
+
+@media screen and (max-width: 767.98px) {
+	.pu_voice .-_w_column { flex-direction: column;}
+
+	.pu_voice .-__column { width: 100%;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
